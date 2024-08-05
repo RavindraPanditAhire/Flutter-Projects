@@ -1,21 +1,24 @@
+import 'home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:ws_cube_tech_widgets/home_page.dart';
 void main() {
-  runApp(const MyApp());
+  runApp(MyPortfolioApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
+class MyPortfolioApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Ravindra\'s Portfolio',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  HomePage(),
+      home: HomeScreen(),
     );
+  }
 }
-}
+
+
+
+
+
